@@ -14,11 +14,14 @@ def erat(rng):
         j += i
     i += 2
   def primfac(c):
+    # This function reccursively finds all prime factors
+    # if a number is prime it is printed
     if a[c] == c:
       print(c)
     else:
       print(a[c],' * ',end='')
       primfac(int(c/a[c]))
+      # if it is not prime prints its biggest prime factor and reccursively calls same funtion to print prime factors of the number divided by its biggest prime factor
   i = 1
   while i != 0:
     print('Enter number to prime factorize 0 to exit : ')
